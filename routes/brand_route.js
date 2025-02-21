@@ -1,6 +1,6 @@
 const express = require('express');
-const {getBrands,createBrand,getBrand,UpdateBrand,DeleteBrand} = require('../../controllers/brand_controller');
-const {getBrandValidator,createBrandValidator,updateBrandValidator,deleteBrandValidator} = require('../../utilities/validators/brandValidator');
+const {getBrands,createBrand,getBrand,UpdateBrand,DeleteBrand} = require('../controllers/brand_controller');
+const {getBrandValidator,createBrandValidator,updateBrandValidator,deleteBrandValidator} = require('../utilities/validators/brandValidator');
 
 const router = express.Router();
 

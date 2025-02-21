@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const ApiError = require('./utilities/ApiError');
 const globalError = require('./middlewares/ErrorMiddlewares');
 const subCategoryRoute = require('./routes/subCategory_route');
-const brandRoute = require('./src/brand/brand_route');
+const brandRoute = require('./routes/brand_route');
 
 const dbConnection = require('./configs/database');
 const categoryRoute = require('./routes/category_route');

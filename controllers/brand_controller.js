@@ -11,7 +11,7 @@ exports.getBrands = asyncHandler(async(req,res)=>{
     const skip = (page-1)*limit;
 
     const brands = await brandModel.find({}).skip(skip).limit(limit);
-    res.status(201).json({results: brands.length, page, fata:brands});
+    res.status(201).json({results: brands.length, page, data:brands});
 });
 
 exports.getBrand = asyncHandler(async(req,res,next) => {
